@@ -16,7 +16,7 @@ const int COLUMNS = 3;
 const int LEFTRANGE = 0;
 const int RIGHTRANGE = 10;
 
-if (countRow > ROWS || countColumn > COLUMNS)
+if (countRow >= ROWS || countColumn >= COLUMNS || countRow < 0 || countColumn < 0)
 {
     Console.WriteLine("такого числа в массиве нет");
 }
